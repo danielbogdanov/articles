@@ -111,9 +111,8 @@ What started as a dusty Raspberry Pi is now my reliable gateway to my entire hom
 
 My homelab is no longer imprisoned behind my router – it's now accessible from anywhere, even from a van surrounded by some of Europe's most stunning wilderness. The thought of following along with Misha's heavenly voice explaining complex networking concepts while I'm literally surrounded by mountains that have stood for millions of years... honestly, it doesn't get much better than that.
 
-And the best part? My cat still won't help with the electricity bill, but at least I can monitor my energy usage dashboard from a Bulgarian mountaintop to confirm this fact.
 
-*Now if you'll excuse me, I need to go plan my route through the Rhodopes and download all of Misha's latest tutorials for offline viewing – because even with Tailscale, I'm not trusting mountain cellular for streaming video.*
+*Now if you'll excuse me, I need to go plan my route through the Rhodopes!*
 
 ---
 
