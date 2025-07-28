@@ -8,7 +8,7 @@ Picture this: me, parked somewhere spectacular in the Bulgarian wilderness, surr
 
 Enter my trusty Raspberry Pi 3, which had been collecting dust like a forgotten Tamagotchi. Time to put this little guy to work as my personal gateway to homelab nirvana.
 
-![Raspberry Pi Setup](assets/img/44FEA70E-9E0D-4F0D-868E-FEB624E75ADE.heic)
+![Raspberry Pi Setup](assets/img/IMG_9552.jpeg)
 
 ## The Plan: Alpine Linux + Tailscale = Remote Homelab Access
 
@@ -42,7 +42,7 @@ tailscale up
 
 After visiting the authentication URL and convincing Tailscale that yes, this dusty Pi really does belong to me, I had my first Tailscale node running.
 
-![Tailscale Configuration](assets/img/7D0D85B6-2614-490E-9314-4281BF3AF8E7.heic)
+![Tailscale Configuration](assets/img/IMG_9576.jpeg)
 
 ### Step 3: The Real Magic – Subnet Routing
 
