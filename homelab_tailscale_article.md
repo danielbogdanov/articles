@@ -8,7 +8,7 @@ Picture this: me, parked somewhere spectacular in the Bulgarian wilderness, surr
 
 Enter my trusty Raspberry Pi 3, which had been collecting dust like a forgotten Tamagotchi. Time to put this little guy to work as my personal gateway to homelab nirvana.
 
-![Raspberry Pi Setup](assets/img/IMG_9552.jpeg)
+![Raspberry Pi Setup](assets/img/IMG_9552.jpeg){width=400px}
 
 ## The Plan: Alpine Linux + Tailscale = Remote Homelab Access
 
@@ -42,7 +42,7 @@ tailscale up
 
 After visiting the authentication URL and convincing Tailscale that yes, this dusty Pi really does belong to me, I had my first Tailscale node running.
 
-![Tailscale Configuration](assets/img/IMG_9576.jpeg)
+![Tailscale Configuration](assets/img/IMG_9576.jpeg){width=400px}
 
 ### Step 3: The Real Magic – Subnet Routing
 
@@ -83,7 +83,7 @@ All of this works seamlessly from any device on my Tailscale network, whether I'
 
 **The real test:** I can now run `kubectl` commands against my homelab cluster from my laptop anywhere in the world, as if I were sitting right next to it. No VPN clients, no port forwarding nightmares, no sacrificial offerings to the networking gods required.
 
-![Kubernetes Dashboard Access](assets/img/9FF62307-306A-4887-9FEA-9A0206F78CB6_1_102_o.jpeg)
+![Kubernetes Dashboard Access](assets/img/9FF62307-306A-4887-9FEA-9A0206F78CB6_1_102_o.jpeg){width=400px}
 
 ## Why This Setup Rocks
 
@@ -107,7 +107,7 @@ All of this works seamlessly from any device on my Tailscale network, whether I'
 
 What started as a dusty Raspberry Pi is now my reliable gateway to my entire homelab, perfectly timed for my Rhodope Mountains expedition. Whether I'm parked at a scenic overlook learning about Prometheus monitoring from Misha's tutorials, troubleshooting a deployment while watching the sunrise over ancient peaks, or just want to check on my Kubernetes pods while pretending the cellular signal isn't cutting in and out, everything is just a Tailscale connection away.
 
-![Rhodope Mountains Adventure](assets/img/F710971F-3A4E-48F5-B5BB-881502CF4D8F_4_5005_c.jpeg)
+![Rhodope Mountains Adventure](assets/img/F710971F-3A4E-48F5-B5BB-881502CF4D8F_4_5005_c.jpeg){width=400px}
 
 My homelab is no longer imprisoned behind my router – it's now accessible from anywhere, even from a van surrounded by some of Europe's most stunning wilderness. The thought of following along with Misha's heavenly voice explaining complex networking concepts while I'm literally surrounded by mountains that have stood for millions of years... honestly, it doesn't get much better than that.
 
