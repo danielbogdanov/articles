@@ -1,2 +1,6 @@
 
 @import "{{ site.theme }}";
+img {
+    max-width: 400px;
+    height: auto;
+}
