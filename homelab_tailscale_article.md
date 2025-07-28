@@ -4,7 +4,7 @@
 
 Like many homelab enthusiasts, I found myself in that familiar predicament: I had a beautiful Kubernetes cluster humming away at home, but with my planned campervan trip around the breathtaking Rhodope Mountains approaching, I needed a way to stay connected to my digital kingdom. 
 
-Picture this: me, parked somewhere spectacular in the Bulgarian wilderness, surrounded by ancient peaks and pristine nature, following along with Misha's Homelab Tutorials – that man's voice is basically the Morgan Freeman of the homelab world. I could already imagine his heavenly narration guiding me through some complex Kubernetes deployment while I'm literally surrounded by some of the most beautiful mountains in Europe. But there was one tiny problem: accessing my homelab from a van in the middle of nowhere felt about as realistic as getting my cat to contribute to my electricity bill.
+Picture this: me, parked somewhere spectacular in the Bulgarian wilderness, surrounded by ancient peaks and pristine nature, following along with Misha's Homelab Tutorials – that man's voice is basically the Morgan Freeman of the DevOps world. I could already imagine his heavenly narration guiding me through some complex Kubernetes deployment while I'm literally surrounded by some of the most beautiful mountains in Europe. But there was one tiny problem: accessing my homelab from a van in the middle of nowhere felt about as realistic as getting my cat to contribute to my electricity bill.
 
 Enter my trusty Raspberry Pi 3, which had been collecting dust like a forgotten Tamagotchi. Time to put this little guy to work as my personal gateway to homelab nirvana.
 
@@ -12,7 +12,7 @@ Enter my trusty Raspberry Pi 3, which had been collecting dust like a forgotten 
 
 ## The Plan: Alpine Linux + Tailscale = Remote Homelab Access
 
-The goal was simple: access my entire home network (and my precious Kubernetes cluster) from anywhere, without turning my router into Swiss cheese with port forwards or setting up a VPN that would make even a network engineer cry.
+The goal was simple: access my entire home network (and my precious Kubernetes cluster) from anywhere, in the esiest way possible.
 
 ### Step 1: Installing Alpine Linux (AKA "Why is my boot partition the size of a postage stamp?")
 
@@ -24,7 +24,7 @@ First things first, I needed to get Alpine Linux running on the Pi. Alpine is pe
 3. Reformatted the entire SD card: `diskutil eraseDisk FAT32 ALPINE MBR /dev/disk4`
 4. Copied Alpine files and booted up
 
-**Pro tip:** When Alpine asks for your keyboard layout and suddenly your keyboard is speaking in numbers and hieroglyphics, remember to type "us" for the layout. Yes, even if it looks like you're summoning ancient spirits on screen.
+**Pro tip:** When Alpine asks for your keyboard layout and suddenly your keyboard is speaking in numbers and hieroglyphics, remember to type "us" for the layout, because it is not amidst the actual suggestions.
 
 ### Step 2: Tailscale Installation (Or: How I learned that Alpine doesn't believe in sudo)
 
@@ -62,7 +62,6 @@ sysctl -p
 ```bash
 # Found my actual network (not the one I assumed it was)
 ip route show | grep eth0
-# Turns out it was 192.168.68.0/24, not 192.168.1.0/24 like I initially thought
 
 # Advertise the correct subnet
 tailscale up --advertise-routes=192.168.68.0/24
